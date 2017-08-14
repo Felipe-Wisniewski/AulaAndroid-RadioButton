@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="radiobutton.cursoandroid.com.radiobutton.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Qual sua comida preferida?"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupId"
+        android:layout_width="200dp"
+        android:layout_height="125dp"
+        android:layout_margin="5dp"
+        android:layout_weight="0.04">
+
+        <RadioButton
+            android:id="@+id/radioBotaoCarnesId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="Carnes" />
+
+        <RadioButton
+            android:id="@+id/radioBotaoAvesId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aves" />
+
+        <RadioButton
+            android:id="@+id/radioBotaoPeixesId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peixes" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botaoMostrarId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Mostrar" />
+
+    <TextView
+        android:id="@+id/textoExibicaoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+</LinearLayout>
